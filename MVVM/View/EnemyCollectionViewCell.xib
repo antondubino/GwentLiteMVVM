@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EnemyCollectionViewCell" customModule="MVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="121" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="121" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чародейка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHS-Hh-MfZ">
+                        <rect key="frame" x="10" y="10" width="101" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lXP-GG-vkz">
+                        <rect key="frame" x="51" y="61" width="19" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="lXP-GG-vkz" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="1bV-gb-iYo"/>
+                <constraint firstAttribute="trailing" secondItem="JHS-Hh-MfZ" secondAttribute="trailing" constant="10" id="ITO-P8-5en"/>
+                <constraint firstItem="JHS-Hh-MfZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="QRn-8M-Qmj"/>
+                <constraint firstItem="lXP-GG-vkz" firstAttribute="top" secondItem="JHS-Hh-MfZ" secondAttribute="bottom" constant="35" id="daa-G2-Jqc"/>
+                <constraint firstItem="JHS-Hh-MfZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="liP-wM-YPD"/>
+            </constraints>
+            <size key="customSize" width="146" height="204"/>
+            <connections>
+                <outlet property="forceLabel" destination="lXP-GG-vkz" id="Jgf-hp-eWc"/>
+                <outlet property="nameLabel" destination="JHS-Hh-MfZ" id="gdX-QB-fzc"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="71.651785714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
